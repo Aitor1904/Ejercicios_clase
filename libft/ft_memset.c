@@ -1,26 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: olix <olix@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/25 10:26:14 by olix              #+#    #+#             */
-/*   Updated: 2026/09/30 13:00:57 by olix             ###   ########.fr       */
+/*   Created: 2026/09/30 12:58:42 by olix              #+#    #+#             */
+/*   Updated: 2026/09/30 13:01:03 by olix             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-# include <unistd.h>
-# include <stdlib.h>
-
-int	ft_isalpha(int c);
-int	ft_isdigit(int c);
-int	ft_isalnum(int c);
-int	ft_isalnum(int c);
-int	ft_isprint(int c);
 void	*memset(void *s, int c, size_t n);
-
-#endif

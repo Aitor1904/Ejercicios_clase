@@ -6,15 +6,15 @@
 /*   By: olix <olix@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/30 12:44:05 by olix              #+#    #+#             */
-/*   Updated: 2026/09/30 12:47:10 by olix             ###   ########.fr       */
+/*   Updated: 2026/09/30 12:58:01 by olix             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isascii(int c)
+int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
-		return(1);
+		return (1);
 	return (0);
 }

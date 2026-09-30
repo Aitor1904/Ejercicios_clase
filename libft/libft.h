@@ -1,21 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: olix <olix@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/25 10:13:43 by olix              #+#    #+#             */
-/*   Updated: 2026/09/30 12:25:25 by olix             ###   ########.fr       */
+/*   Created: 2026/09/25 10:26:14 by olix              #+#    #+#             */
+/*   Updated: 2026/09/30 12:50:19 by olix             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef LIBFT_H
+# define LIBFT_H
 
-int	ft_isalpha(int c)
-{
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-		return (1);
-	else
-		return (0);
-}
+# include <unistd.h>
+# include <stdlib.h>
+
+int	ft_isalpha(int c);
+int	ft_isdigit(int c);
+int	ft_isalnum(int c);
+int	ft_isalnum(int c);
+
+#endif

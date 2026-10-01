@@ -6,7 +6,7 @@
 #    By: olix <olix@student.42.fr>                  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/09/25 10:13:16 by olix              #+#    #+#              #
-#    Updated: 2026/10/01 20:26:42 by olix             ###   ########.fr        #
+#    Updated: 2026/10/01 23:02:51 by olix             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,6 +25,13 @@ SRCS		= ft_isalpha.c \
 			  ft_bzero.c \
 			  ft_memcpy.c \
 			  ft_memmove.c \
+			  ft_toupper.c \
+			  ft_tolower.c \
+			  ft_strchr.c \
+			  ft_strrchr.c \
+			  ft_strncmp.c \
+
+
 
 OBJS		= $(SRCS:.c=.o)
 

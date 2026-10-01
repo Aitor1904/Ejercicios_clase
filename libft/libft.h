@@ -6,7 +6,7 @@
 /*   By: olix <olix@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/25 10:26:14 by olix              #+#    #+#             */
-/*   Updated: 2026/10/01 20:48:32 by olix             ###   ########.fr       */
+/*   Updated: 2026/10/01 23:02:27 by olix             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,6 @@ void	*ft_memmove(void *dest, const void *src, size_t n);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 char	*ft_strchr(const char *s, int c);
+char	*strrchr(const char *s, int c);
 
 #endif

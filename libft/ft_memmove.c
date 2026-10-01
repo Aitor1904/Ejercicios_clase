@@ -6,7 +6,7 @@
 /*   By: olix <olix@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/30 21:46:53 by olix              #+#    #+#             */
-/*   Updated: 2026/09/30 22:10:22 by olix             ###   ########.fr       */
+/*   Updated: 2026/10/01 20:17:39 by olix             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,15 +24,12 @@ void	*ft_memmove(void *dst, const void *src, size_t n)
 		return (NULL);
 	if (dst > src)
 	{
-		while (0 < n)
-		{
-			p_dst[n -1] = p_src[n -1];
-			n--;
-		}
+		while (n--)
+			p_dst[n] = p_src[n];
 	}
 	else
 	{
-		i = 0
+		i = 0;
 		while (i < n)
 		{
 			p_dst[i] = p_src[i];

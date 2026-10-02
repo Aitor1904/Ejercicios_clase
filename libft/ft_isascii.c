@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: olix <olix@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/30 12:44:05 by olix              #+#    #+#             */
-/*   Updated: 2026/09/30 12:58:01 by olix             ###   ########.fr       */
+/*   Created: 2026/09/30 14:21:37 by ailopez           #+#    #+#             */
+/*   Updated: 2026/10/01 13:02:55 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,15 @@ int	ft_isascii(int c)
 		return (1);
 	return (0);
 }
+
+/*#include <stdio.h>
+
+int	main (void)
+{
+	int	c = '5';
+	int	result;
+
+	result = ft_isascii(c);
+	printf("%d", result);
+}
+*/

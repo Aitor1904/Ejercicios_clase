@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: olix <olix@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/01 23:01:19 by olix              #+#    #+#             */
-/*   Updated: 2026/10/01 23:08:31 by olix             ###   ########.fr       */
+/*   Created: 2026/10/02 10:44:17 by ailopez           #+#    #+#             */
+/*   Updated: 2026/10/02 13:01:49 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	int	len;
 

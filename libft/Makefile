@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: olix <olix@student.42.fr>                  +#+  +:+       +#+         #
+#    By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/09/25 10:13:16 by olix              #+#    #+#              #
-#    Updated: 2026/10/01 23:02:51 by olix             ###   ########.fr        #
+#    Created: 2026/09/30 14:14:25 by ailopez           #+#    #+#              #
+#    Updated: 2026/10/02 12:51:11 by ailopez          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,23 +15,7 @@ NAME		= libft.a
 CC			= cc
 CFLAGS		= -Wall -Wextra -Werror
 
-SRCS		= ft_isalpha.c \
-			  ft_isdigit.c \
-			  ft_isalnum.c \
-			  ft_isascii.c \
-			  ft_isprint.c \
-			  ft_strlen.c \
-			  ft_memset.c \
-			  ft_bzero.c \
-			  ft_memcpy.c \
-			  ft_memmove.c \
-			  ft_toupper.c \
-			  ft_tolower.c \
-			  ft_strchr.c \
-			  ft_strrchr.c \
-			  ft_strncmp.c \
-
-
+SRCS		= $(wildcard ft_*.c)
 
 OBJS		= $(SRCS:.c=.o)
 

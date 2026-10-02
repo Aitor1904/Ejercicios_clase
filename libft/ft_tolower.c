@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: olix <olix@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/01 20:35:33 by olix              #+#    #+#             */
-/*   Updated: 2026/10/01 20:44:44 by olix             ###   ########.fr       */
+/*   Created: 2026/10/01 13:11:33 by ailopez           #+#    #+#             */
+/*   Updated: 2026/10/02 11:35:15 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,14 @@ int	ft_tolower(int c)
 		return (c + 32);
 	return (c);
 }
+
+/*#include <stdio.h>
+
+int main(void)
+{
+	int c = 'A';
+	int result;
+
+	result = ft_toupper(c);
+	printf("%d", result);
+}*/

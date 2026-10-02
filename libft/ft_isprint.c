@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: olix <olix@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/30 12:51:41 by olix              #+#    #+#             */
-/*   Updated: 2026/09/30 12:58:09 by olix             ###   ########.fr       */
+/*   Created: 2026/09/30 14:23:19 by ailopez           #+#    #+#             */
+/*   Updated: 2026/10/01 13:03:16 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,14 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
+
+/*#include <stdio.h>
+
+int	main (void)
+{
+	int	c = '5';
+	int	result;
+
+	result = ft_isdigit(c);
+	printf("%d", result);
+}*/

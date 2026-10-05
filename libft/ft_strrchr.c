@@ -6,7 +6,7 @@
 /*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/02 10:44:17 by ailopez           #+#    #+#             */
-/*   Updated: 2026/10/02 13:01:49 by ailopez          ###   ########.fr       */
+/*   Updated: 2026/10/06 00:31:10 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,4 +24,18 @@ char	*ft_strrchr(const char *s, int c)
 		len--;
 	}
 	return (NULL);
+}
+
+#include <stdio.h>
+#include <string.h>
+
+int	main(void)
+{
+	char	str[] = "Hola 42 Malaga 42";
+
+	printf("Ultima '4': %s\n", ft_strrchr(str, '4'));
+	printf("Buscar '\\0': %s\n", ft_strrchr(str, '\0'));
+	printf("Buscar 'z':  %s\n", ft_strrchr(str, 'z'));
+
+	return (0);
 }

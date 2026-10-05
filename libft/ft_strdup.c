@@ -1,34 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/30 14:33:09 by ailopez           #+#    #+#             */
-/*   Updated: 2026/10/06 00:26:29 by ailopez          ###   ########.fr       */
+/*   Created: 2026/10/05 23:31:20 by ailopez           #+#    #+#             */
+/*   Updated: 2026/10/05 23:35:27 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *str)
+char	*ft_strdup(const char *s1)
 {
-	int	i;
+	char	*dup;
+	size_t	len;
 
-	i = 0;
-	while (str[i])
-		i++;
-	return (i);
-}
-
-#include <stdio.h>
-
-int	main(void)
-{
-	char	str[] = "Hola mundo 42";
-
-	printf("'%s'\n", str);
-	printf("%ld Caracteres\n", ft_strlen(str));
-	return (0);
+	len = ft_strlen(s1);
+	dup = (char *)malloc(sizeof(char) * (len + 1));
+	if (!dup)
+		return (NULL);
+	ft_memcpy(dup, s1, len + 1);
+	return (dup);
 }

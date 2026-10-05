@@ -6,7 +6,7 @@
 /*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/05 10:35:50 by ailopez           #+#    #+#             */
-/*   Updated: 2026/10/06 00:15:05 by ailopez          ###   ########.fr       */
+/*   Updated: 2026/10/06 00:41:58 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	return (0);
 }
 
-#include <stdio.h>
+/*#include <stdio.h>
 #include <string.h>
 
 int	main (void)
@@ -53,4 +53,4 @@ int	main (void)
 	else
 		printf ("Test 3 (n = 0):      KO\n");
 	return (0);
-}
+}*/

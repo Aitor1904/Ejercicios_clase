@@ -6,7 +6,7 @@
 /*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/02 13:13:54 by ailopez           #+#    #+#             */
-/*   Updated: 2026/10/06 00:03:28 by ailopez          ###   ########.fr       */
+/*   Updated: 2026/10/06 00:42:00 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	return (NULL);
 }
 
-#include <stdio.h>
+/*#include <stdio.h>
 #include <string.h>
 
 int	main(void)
@@ -43,4 +43,4 @@ int	main(void)
 	if (ft_memchr(str, 'm', 4) == memchr(str, 'm', 4))
 		printf ("Test 2 : OK\n");
 	return (0);
-}
+}*/

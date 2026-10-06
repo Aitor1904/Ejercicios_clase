@@ -1,44 +1,52 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/01 13:22:53 by ailopez           #+#    #+#             */
-/*   Updated: 2026/10/06 10:21:24 by ailopez          ###   ########.fr       */
+/*   Created: 2026/10/06 10:22:23 by ailopez           #+#    #+#             */
+/*   Updated: 2026/10/06 12:15:52 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
+	char	*sub;
 	size_t	i;
-	size_t	src_len;
+	size_t	s_len;
 
-	src_len = ft_strlen(src);
-	if (dstsize == 0)
-		return (src_len);
+	if (!s)
+		return (NULL);
+	s_len = ft_strlen(s);
+	if (start >= s_len)
+		return (ft_strdup(""));
+	if (len > s_len - start)
+		len = s_len - start;
+	sub = (char *)malloc(sizeof(char) * (len + 1));
+	if (!sub)
+		return (NULL);
 	i = 0;
-	while (src[i] && i < dstsize - 1)
+	while (i < len)
 	{
-		dst[i] = src[i];
+		sub[i] = s[start + i];
 		i++;
 	}
-	dst[i] = '\0';
-	return (src_len);
+	sub[i] = '\0';
+	return (sub);
 }
 
 /*#include <stdio.h>
 
-int	main(void)
+int	main (void)
 {
-	char	src[] = "Hola Mundo 42 !";
-	char	dst[20];
-	size_t	ret;
+	char	s[] = "Hola";
+	char	*sub;
 
-	ret = ft_strlcpy(dst, src, 8);
-	printf("Copiado en dst: '%s'\n", dst);
+	sub = NULL;
+	printf("%s", ft_substr(s, 5, 9));
+	free(sub);
 	return (0);
 }*/

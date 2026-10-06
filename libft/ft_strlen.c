@@ -6,7 +6,7 @@
 /*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/30 14:33:09 by ailopez           #+#    #+#             */
-/*   Updated: 2026/10/06 00:26:29 by ailopez          ###   ########.fr       */
+/*   Updated: 2026/10/06 10:21:19 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ size_t	ft_strlen(const char *str)
 	return (i);
 }
 
-#include <stdio.h>
+/*#include <stdio.h>
 
 int	main(void)
 {
@@ -31,4 +31,4 @@ int	main(void)
 	printf("'%s'\n", str);
 	printf("%ld Caracteres\n", ft_strlen(str));
 	return (0);
-}
+}*/

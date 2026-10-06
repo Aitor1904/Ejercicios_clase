@@ -6,7 +6,7 @@
 /*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/02 10:44:17 by ailopez           #+#    #+#             */
-/*   Updated: 2026/10/06 00:31:10 by ailopez          ###   ########.fr       */
+/*   Updated: 2026/10/06 10:21:05 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	*ft_strrchr(const char *s, int c)
 	return (NULL);
 }
 
-#include <stdio.h>
+/*#include <stdio.h>
 #include <string.h>
 
 int	main(void)
@@ -38,4 +38,4 @@ int	main(void)
 	printf("Buscar 'z':  %s\n", ft_strrchr(str, 'z'));
 
 	return (0);
-}
+}*/

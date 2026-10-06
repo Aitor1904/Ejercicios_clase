@@ -1,44 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/01 13:22:53 by ailopez           #+#    #+#             */
-/*   Updated: 2026/10/06 10:21:24 by ailopez          ###   ########.fr       */
+/*   Created: 2026/10/06 12:19:49 by ailopez           #+#    #+#             */
+/*   Updated: 2026/10/06 12:39:54 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
+	char	*joined;
 	size_t	i;
-	size_t	src_len;
+	size_t	j;
 
-	src_len = ft_strlen(src);
-	if (dstsize == 0)
-		return (src_len);
+	if (!s1 || !s2)
+		return (NULL);
+	joined = (char *)malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
+	if (!joined)
+		return (NULL);
 	i = 0;
-	while (src[i] && i < dstsize - 1)
+	while (s1[i])
 	{
-		dst[i] = src[i];
+		joined[i] = s1[i];
 		i++;
 	}
-	dst[i] = '\0';
-	return (src_len);
+	j = 0;
+	while (s2[j])
+		joined[i++] = s2[j++];
+	joined[i] = '\0';
+	return (joined);
 }
-
-/*#include <stdio.h>
-
-int	main(void)
-{
-	char	src[] = "Hola Mundo 42 !";
-	char	dst[20];
-	size_t	ret;
-
-	ret = ft_strlcpy(dst, src, 8);
-	printf("Copiado en dst: '%s'\n", dst);
-	return (0);
-}*/

@@ -6,7 +6,7 @@
 /*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/02 12:32:54 by ailopez           #+#    #+#             */
-/*   Updated: 2026/10/06 00:27:58 by ailopez          ###   ########.fr       */
+/*   Updated: 2026/10/06 10:21:16 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
 
-#include <stdio.h>
+/*#include <stdio.h>
 #include <string.h>
 
 int	main(void)
@@ -39,4 +39,4 @@ int	main(void)
 	printf("Comparar con n = 0: %d\n",
 		ft_strncmp(s1, s2, 0));
 	return (0);
-}
+}*/

@@ -1,44 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/10/01 13:22:53 by ailopez           #+#    #+#             */
-/*   Updated: 2026/10/06 10:21:24 by ailopez          ###   ########.fr       */
+/*   Created: 2026/10/06 12:43:28 by ailopez           #+#    #+#             */
+/*   Updated: 2026/10/06 13:26:23 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+char *ft_strtrim(char const *s1, char const *set)
 {
+	char	*sub;
 	size_t	i;
-	size_t	src_len;
 
-	src_len = ft_strlen(src);
-	if (dstsize == 0)
-		return (src_len);
-	i = 0;
-	while (src[i] && i < dstsize - 1)
+	if (!s1 || !set)
+		return (NULL);
+	sub = (char *)malloc(ft_strlen(s1) + 1);
+	if (!sub)
+		return (NULL);
+	while (s1[i])
 	{
-		dst[i] = src[i];
+		
 		i++;
 	}
-	dst[i] = '\0';
-	return (src_len);
 }
-
-/*#include <stdio.h>
-
-int	main(void)
-{
-	char	src[] = "Hola Mundo 42 !";
-	char	dst[20];
-	size_t	ret;
-
-	ret = ft_strlcpy(dst, src, 8);
-	printf("Copiado en dst: '%s'\n", dst);
-	return (0);
-}*/

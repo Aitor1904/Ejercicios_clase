@@ -6,7 +6,7 @@
 /*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/30 14:14:49 by ailopez           #+#    #+#             */
-/*   Updated: 2026/10/06 23:23:51 by ailopez          ###   ########.fr       */
+/*   Updated: 2026/10/07 14:37:49 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ void	*ft_calloc(size_t count, size_t size);
 char	*ft_strdup(const char *s1);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
 
 #endif

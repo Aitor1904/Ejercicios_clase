@@ -6,13 +6,13 @@
 /*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/06 12:43:28 by ailopez           #+#    #+#             */
-/*   Updated: 2026/10/06 23:19:23 by ailopez          ###   ########.fr       */
+/*   Updated: 2026/10/07 14:12:18 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	is_in_set(char c, char const *set)
+static	int	is_in_set(char c, char const *set)
 {
 	size_t	i;
 
@@ -25,7 +25,8 @@ static int	is_in_set(char c, char const *set)
 	}
 	return (0);
 }
-char *ft_strtrim(char const *s1, char const *set)
+
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	start;
 	size_t	end;

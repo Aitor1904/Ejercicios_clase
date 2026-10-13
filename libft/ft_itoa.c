@@ -6,7 +6,7 @@
 /*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 10:38:39 by ailopez           #+#    #+#             */
-/*   Updated: 2026/10/13 13:28:15 by ailopez          ###   ########.fr       */
+/*   Updated: 2026/10/13 13:45:23 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char	*ft_itoa(int n)
 	result[i + start] = '\0';
 	if (!result)
 		return (NULL);
-	while (nb > 0)
+	while (result > 0)
 	{
 		nb = nb % 10 + '0';
 		nb = nb / 10;

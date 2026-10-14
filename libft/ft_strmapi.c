@@ -6,7 +6,7 @@
 /*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 21:22:25 by ailopez           #+#    #+#             */
-/*   Updated: 2026/10/13 23:56:18 by ailopez          ###   ########.fr       */
+/*   Updated: 2026/10/14 10:43:28 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (res);
 }
 
-#include <stdio.h>
+/*#include <stdio.h>
 
 char	ft_to_upper_index(unsigned int i, char c)
 {
@@ -55,4 +55,4 @@ int	main(void)
 	printf("Modificada: %s\n", s_resultado);
 	free(s_resultado);
 	return (0);
-}
+}*/

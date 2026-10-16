@@ -6,7 +6,7 @@
 /*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 21:25:02 by ailopez           #+#    #+#             */
-/*   Updated: 2026/10/15 21:27:51 by ailopez          ###   ########.fr       */
+/*   Updated: 2026/10/16 10:50:41 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,7 @@
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	if (!lst || !f)
-		return;
-
+		return ;
 	while (lst)
 	{
 		f(lst->content);

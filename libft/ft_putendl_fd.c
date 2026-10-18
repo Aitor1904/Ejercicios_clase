@@ -6,7 +6,7 @@
 /*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 11:30:17 by ailopez           #+#    #+#             */
-/*   Updated: 2026/10/14 12:07:56 by ailopez          ###   ########.fr       */
+/*   Updated: 2026/10/18 19:32:15 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,8 @@ void	ft_putendl_fd(char *s, int fd)
 	}
 	write (fd, "\n", 1);
 }
+/*int main(void)
+{
+	ft_putendl_fd("Hola 42!", 1);
+	return (0);
+}*/

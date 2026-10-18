@@ -6,7 +6,7 @@
 /*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/02 13:13:54 by ailopez           #+#    #+#             */
-/*   Updated: 2026/10/06 00:42:00 by ailopez          ###   ########.fr       */
+/*   Updated: 2026/10/18 19:17:45 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,14 +33,8 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 int	main(void)
 {
-	char	str[] = "Hola mundo 42!";
-	size_t	len = sizeof(str);
+	char *res = ft_memchr("Hola 42", 'a', 7);
 
-	if (ft_memchr(str, '2', len) == memchr(str, '4', len))
-		printf ("Test 1 ('4'): OK\n");
-	else
-		printf ("Test 1 ('4'): KO\n");
-	if (ft_memchr(str, 'm', 4) == memchr(str, 'm', 4))
-		printf ("Test 2 : OK\n");
+	printf("%s\n", res);
 	return (0);
 }*/

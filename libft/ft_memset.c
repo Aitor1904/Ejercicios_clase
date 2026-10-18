@@ -6,7 +6,7 @@
 /*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/30 14:26:24 by ailopez           #+#    #+#             */
-/*   Updated: 2026/10/01 12:51:14 by ailopez          ###   ########.fr       */
+/*   Updated: 2026/10/18 19:04:42 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,14 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (ptr);
 }
+
+/*#include "stdio.h"
+
+int main (void)
+{
+	char buffer[20] = "Hola 42!";
+
+	ft_memset(buffer, '.', 4);
+	printf("%s\n", buffer);
+	return (0);
+}*/

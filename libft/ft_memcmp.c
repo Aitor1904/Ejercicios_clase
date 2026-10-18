@@ -6,7 +6,7 @@
 /*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/05 10:35:50 by ailopez           #+#    #+#             */
-/*   Updated: 2026/10/06 00:41:58 by ailopez          ###   ########.fr       */
+/*   Updated: 2026/10/18 19:35:11 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,22 +35,11 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 
 int	main (void)
 {
-	char	str1[] = "Hola 42";
-	char	str2[] = "H0la 42";
-	char	str3[] = "Hola World";
-	char	str4[] = "Hola World!";
+	char *s1;
+	char *s2;
 
-	if (ft_memcmp(str1, str2, 7) == memcmp(str1, str2, 7))
-		printf ("Test 1 (Iguales):    OK\n");
-	else
-		printf ("Test 1 (Iguales):    KO\n");
-	if (ft_memcmp(str3, str4, 11) == memcmp(str3, str4, 11))
-		printf ("Test 2 (Diferentes): OK\n");
-	else
-		printf ("Test 2 (Diferentes): KO\n");
-	if (ft_memcmp(str3, str4, 0) == memcmp(str3, str4, 0))
-		printf ("Test 3 (n = 0):      OK\n");
-	else
-		printf ("Test 3 (n = 0):      KO\n");
+	s1[] = "Hola 42";
+	s2[] = "Hola 42";
+	printf("Resultado: %d\n", ft_memcmp(s1, s2, 7));
 	return (0);
 }*/

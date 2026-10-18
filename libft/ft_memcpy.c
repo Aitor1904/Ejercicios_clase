@@ -6,7 +6,7 @@
 /*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/30 18:29:15 by ailopez           #+#    #+#             */
-/*   Updated: 2026/10/01 13:47:19 by ailopez          ###   ########.fr       */
+/*   Updated: 2026/10/18 19:32:58 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,3 +30,17 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+/*#include <stdio.h>
+
+int main(void)
+{
+	char src[] = "Hola mundo";
+	char dest[20];
+
+	ft_memcpy(dest, src, 6);
+
+	printf("Origen:  %s\n", src);
+	printf("Destino: %s\n", dest);
+
+	return (0);
+}*/

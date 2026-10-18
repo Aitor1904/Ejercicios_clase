@@ -6,7 +6,7 @@
 /*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/01 11:19:33 by ailopez           #+#    #+#             */
-/*   Updated: 2026/10/02 10:32:28 by ailopez          ###   ########.fr       */
+/*   Updated: 2026/10/18 19:33:53 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,3 +38,14 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+/*#include <stdio.h>
+
+int main(void)
+{
+	char *texto;
+
+	texto[] = "Hola mundo";
+	ft_memmove(texto, texto + 6, 15);
+	printf("%s\n", texto);
+	return (0);
+}*/

@@ -6,7 +6,7 @@
 /*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/02 11:12:02 by ailopez           #+#    #+#             */
-/*   Updated: 2026/10/02 12:55:18 by ailopez          ###   ########.fr       */
+/*   Updated: 2026/10/18 19:35:39 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,3 +33,14 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst[dst_len + i] = '\0';
 	return (dst_len + src_len);
 }
+/*#include <stdio.h>
+
+int	main(void)
+{
+	char	*dest
+
+	dest[20] = "Hola";
+	ft_strlcat (dest, " mundo", sizeof(dest));
+	printf ("%s\n", dest);
+	return (0);
+}*/

@@ -6,7 +6,7 @@
 /*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/02 10:44:17 by ailopez           #+#    #+#             */
-/*   Updated: 2026/10/18 19:32:43 by ailopez          ###   ########.fr       */
+/*   Updated: 2026/10/19 11:00:54 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,6 @@ char	*ft_strrchr(const char *s, int c)
 
 int	main(void)
 {
-	printf("%s\n", ft_strrchr("Hola mundo", 'a'));
+	printf("%s\n", ft_strrchr("Holna mundo", 'n'));
 	return (0);
 }*/

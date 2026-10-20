@@ -6,7 +6,7 @@
 /*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/06 12:43:28 by ailopez           #+#    #+#             */
-/*   Updated: 2026/10/16 13:01:58 by ailopez          ###   ########.fr       */
+/*   Updated: 2026/10/20 12:09:07 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,3 +43,19 @@ char	*ft_strtrim(char const *s1, char const *set)
 		end--;
 	return (ft_substr(s1, start, (end - start) + 1));
 }
+
+/*#include <stdio.h>
+
+int	main(void)
+{
+	char	*s1 = "   ... H1ola Mundo!...   ";
+	char	*set = " .Ho";
+	char	*result;
+	result = ft_strtrim(s1, set);
+	if (result)
+	{
+		printf("%s\n", result);
+		free(result);
+	}
+	return (0);
+}*/

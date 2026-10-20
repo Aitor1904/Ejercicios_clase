@@ -6,7 +6,7 @@
 /*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/06 10:22:23 by ailopez           #+#    #+#             */
-/*   Updated: 2026/10/18 19:31:48 by ailopez          ###   ########.fr       */
+/*   Updated: 2026/10/20 21:42:41 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,4 +36,17 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	}
 	sub[i] = '\0';
 	return (sub);
+}
+
+#include <stdio.h>
+
+int	main (void)
+{
+	char	s[] = "Hola mundo";
+	char	*result;
+
+	result = ft_substr(s, 3, 3);
+	printf("%s\n", result);
+	free(result);
+	return (0);
 }

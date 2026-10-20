@@ -6,7 +6,7 @@
 /*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 21:22:25 by ailopez           #+#    #+#             */
-/*   Updated: 2026/10/18 19:29:53 by ailopez          ###   ########.fr       */
+/*   Updated: 2026/10/20 21:57:23 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,4 +30,25 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	}
 	res[i] = '\0';
 	return (res);
+}
+
+char	test(unsigned int i, char c)
+{
+	if (i % 2 == 0 && c >= 'a' && c <= 'z')
+		return (c - 32);
+	return (c);
+}
+
+#include <stdio.h>
+
+int	main(void)
+{
+	char	*str;
+	char	*result;
+
+	str = "abcdefg";
+	result = ft_strmapi(str, &test);
+	printf("%s\n", result);
+	free(result);
+	return (0);
 }

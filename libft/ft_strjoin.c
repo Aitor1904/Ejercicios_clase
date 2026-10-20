@@ -6,7 +6,7 @@
 /*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/06 12:19:49 by ailopez           #+#    #+#             */
-/*   Updated: 2026/10/06 12:39:54 by ailopez          ###   ########.fr       */
+/*   Updated: 2026/10/20 21:48:26 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,4 +34,20 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		joined[i++] = s2[j++];
 	joined[i] = '\0';
 	return (joined);
+}
+
+#include <stdio.h>
+
+int main(void)
+{
+	char	*str1;
+	char	*str2;
+	char	*result;
+
+	str1 = "¡Hola, ";
+	str2 = "mundo!";
+	result = ft_strjoin(str1, str2);
+	printf("Resultado de ft_strjoin: %s\n", result);
+		free(result);
+	return (0);
 }

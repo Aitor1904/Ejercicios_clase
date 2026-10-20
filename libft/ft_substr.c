@@ -6,7 +6,7 @@
 /*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/06 10:22:23 by ailopez           #+#    #+#             */
-/*   Updated: 2026/10/20 21:42:41 by ailopez          ###   ########.fr       */
+/*   Updated: 2026/10/20 23:12:42 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (sub);
 }
 
-#include <stdio.h>
+/*#include <stdio.h>
 
 int	main (void)
 {
@@ -49,4 +49,4 @@ int	main (void)
 	printf("%s\n", result);
 	free(result);
 	return (0);
-}
+}*/

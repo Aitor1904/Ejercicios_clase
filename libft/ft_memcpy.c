@@ -6,7 +6,7 @@
 /*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/30 18:29:15 by ailopez           #+#    #+#             */
-/*   Updated: 2026/10/18 19:32:58 by ailopez          ###   ########.fr       */
+/*   Updated: 2026/10/21 11:10:24 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,11 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	const unsigned char	*p_src;
 	size_t				i;
 
+	if (!dest && !src)
+		return (NULL);
 	p_dest = (unsigned char *)dest;
 	p_src = (const unsigned char *)src;
 	i = 0;
-	if (!dest && !src)
-		return (NULL);
 	while (i < n)
 	{
 		p_dest[i] = p_src[i];

@@ -6,7 +6,7 @@
 /*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/05 10:35:50 by ailopez           #+#    #+#             */
-/*   Updated: 2026/10/18 19:35:11 by ailopez          ###   ########.fr       */
+/*   Updated: 2026/10/21 11:15:11 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,11 +35,9 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 
 int	main (void)
 {
-	char *s1;
-	char *s2;
+	char *s1 = "Hola 42";
+	char *s2 = "HolA 42";
 
-	s1[] = "Hola 42";
-	s2[] = "Hola 42";
-	printf("Resultado: %d\n", ft_memcmp(s1, s2, 7));
+	printf("%d\n", ft_memcmp(s1, s2, 7));
 	return (0);
 }*/

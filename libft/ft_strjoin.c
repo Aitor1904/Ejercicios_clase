@@ -6,7 +6,7 @@
 /*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/06 12:19:49 by ailopez           #+#    #+#             */
-/*   Updated: 2026/10/20 21:48:26 by ailopez          ###   ########.fr       */
+/*   Updated: 2026/10/21 11:16:14 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (joined);
 }
 
-#include <stdio.h>
+/*#include <stdio.h>
 
 int main(void)
 {
@@ -50,4 +50,4 @@ int main(void)
 	printf("Resultado de ft_strjoin: %s\n", result);
 		free(result);
 	return (0);
-}
+}*/

@@ -6,7 +6,7 @@
 /*   By: ailopez <ailopez@student.42urduliz.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/13 21:22:25 by ailopez           #+#    #+#             */
-/*   Updated: 2026/10/20 23:12:40 by ailopez          ###   ########.fr       */
+/*   Updated: 2026/10/21 11:16:35 by ailopez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (res);
 }
 
-char	test(unsigned int i, char c)
+/*char	test(unsigned int i, char c)
 {
 	if (i % 2 == 0 && c >= 'a' && c <= 'z')
 		return (c - 32);
@@ -51,4 +51,4 @@ int	main(void)
 	printf("%s\n", result);
 	free(result);
 	return (0);
-}
+}*/
